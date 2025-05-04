@@ -13,7 +13,7 @@ const SearchBar = ({ onSearch }) => {
         type="text"
         name="search"
         placeholder="Search for a country..."
-        className="p-2 border border-gray-300 rounded mr-2 w-64"
+        className="p-2 border border-gray-300 rounded mr-2 w-100"
       />
       <button
         type="submit"

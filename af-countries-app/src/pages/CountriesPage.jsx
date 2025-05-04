@@ -9,6 +9,7 @@ import {
 import CountryCard from "../components/CountryCard";
 import SearchBar from "../components/SearchBar";
 import Filters from "../components/Filters";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const CountriesPage = ({ isAuthenticated }) => {
   const [countries, setCountries] = useState([]);
@@ -72,12 +73,7 @@ const CountriesPage = ({ isAuthenticated }) => {
     }
   };
 
-  if (loading)
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        Loading...
-      </div>
-    );
+  // if (loading) return <LoadingSpinner />;
   if (error)
     return (
       <div className="min-h-screen flex items-center justify-center text-error">
@@ -87,9 +83,10 @@ const CountriesPage = ({ isAuthenticated }) => {
 
   return (
     <div className="min-h-screen p-8">
-      <h1 className="text-3xl font-bold mb-8">Countries Explorer</h1>
-      <SearchBar onSearch={handleSearch} />
-      <Filters onFilter={handleFilter} />
+      <div className="flex justify-center">
+        <SearchBar onSearch={handleSearch} />
+        <Filters onFilter={handleFilter} />
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
         {countries.map((country) => (

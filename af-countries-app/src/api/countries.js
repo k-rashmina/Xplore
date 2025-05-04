@@ -16,7 +16,7 @@ export const getAllCountries = async () => {
 // Search countries by name
 export const searchCountries = async (name) => {
   try {
-    const response = await axios.get(`${BASE_URL}/name/${name}`);
+    const response = await axios.get(`${BASE_URL}/name/${name}?fullText=false`);
     return response.data;
   } catch (error) {
     console.error("Error searching countries:", error);

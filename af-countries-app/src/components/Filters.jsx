@@ -5,7 +5,7 @@ const Filters = ({ onFilter }) => {
   return (
     <div className="flex gap-8 mb-8">
       <div className="flex items-center gap-2">
-        <label htmlFor="region">Filter by Region:</label>
+        <label htmlFor="region"></label>
         <select
           id="region"
           onChange={(e) => onFilter("region", e.target.value)}
@@ -21,7 +21,7 @@ const Filters = ({ onFilter }) => {
       </div>
 
       <div className="flex items-center gap-2">
-        <label htmlFor="language">Filter by Language:</label>
+        <label htmlFor="language"></label>
         <select
           id="language"
           onChange={(e) => onFilter("language", e.target.value)}

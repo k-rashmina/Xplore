@@ -8,7 +8,8 @@ const Header = ({ isAuthenticated, setIsAuthenticated }) => {
   };
 
   return (
-    <header className="bg-neutral-600 text-white p-4 shadow-md sticky top-0 z-50">
+    <header className="bg-neutral-600 text-white p-4 shadow-md sticky top-0 z-50 flex">
+      <h1 className="text-3xl font-bold ">Countries Explorer</h1>
       <div className="container mx-auto">
         <nav>
           <ul className="flex items-center gap-6 list-none">

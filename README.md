@@ -15,7 +15,7 @@ A React application that allows users to explore information about countries aro
 
 ## Hosted Application
 
-The application is hosted at: [Add your hosted application link here]
+The application is hosted at: [warm-pastelito-e84c79.netlify.app]
 
 ## Technologies Used
 
@@ -30,7 +30,7 @@ The application is hosted at: [Add your hosted application link here]
 1. Clone the repository:
 
    ```bash
-   git clone [repository-url]
+   git clone [https://github.com/k-rashmina/Xplore.git]
    ```
 
 2. Navigate to the project directory:

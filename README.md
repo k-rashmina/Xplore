@@ -15,7 +15,7 @@ A React application that allows users to explore information about countries aro
 
 ## Hosted Application
 
-The application is hosted at: [warm-pastelito-e84c79.netlify.app]
+The application is hosted at: **[warm-pastelito-e84c79.netlify.app]**
 
 ## Technologies Used
 
